@@ -3,10 +3,18 @@ package com.example.project;
 public class BookStore{
 
     //requires at least 2 attributes Book[] books, User[] users (initialized to an empty array of 10 max users) 
-    Book[] books;
+    /**
+     * The books that this store possesses. A dynamic array.
+     */
+    Book[] books = new Books[0];
 
+    /**
+     * The users of this bookstore. A static array.
+     */
     User[] users = new User[10];
     //requires 1 empty constructor
+
+    public Bookstore(){}
 
     public User[] getUsers() {
         return users;
@@ -20,8 +28,24 @@ public class BookStore{
         return books;
     }
 
-    public void addUser(User user){} 
+    /**
+     * Sets the first null index of the array users to a reference to user.
+     * @param user The user to be added
+     */
+    public void addUser(User user){
+        boolean isPlaced = false;
+        for (int i = 0; i < users.length; i ++){
+            if((!isPlaced) && users[i] == null){
+                users[i] = user;
+                isPlaced = true;
+            }
+        }
+    } 
 
+    /**
+     * Finds the reference to User user in users, and sets it to null.
+     * @param user The user to remove
+     */
     public void removeUser(User user){
         for(int i = 0; i<users.length; i ++){
             if (users[i] == user){
@@ -44,7 +68,13 @@ public class BookStore{
         users = newArray;
     }
 
-    public void addBook(Book book){}
+    public void addBook(Book book){
+        Book[] newArray = new Book[books.length + 1];
+        for (int i = 0; i < books.length; i ++){
+            newArray[i] = books[i];
+        }
+
+    }
 
     public void insertBook(Book book, int index){}
 
