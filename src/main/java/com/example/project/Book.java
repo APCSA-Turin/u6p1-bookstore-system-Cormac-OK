@@ -45,7 +45,7 @@ public class Book{
         return title;
     }
 
-    public setTitle(String title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
@@ -53,7 +53,7 @@ public class Book{
         return author;
     }
 
-    public setAuthor(String author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
 
@@ -61,7 +61,7 @@ public class Book{
         return yearPublished;
     }
 
-    public setYearPublished(int yearPublished) {
+    public void setYearPublished(int yearPublished) {
         this.yearPublished = yearPublished;
     }
 
@@ -86,6 +86,6 @@ public class Book{
      * @return A String summarizing the book's title, author, year of publication, ISBN, and quantity
      */
     public String bookInfo(){ //returns "Title: [], Author: [], Year: [], ISBN: [], Quantity: []"
-        return "Title: " + title + ", Author: " + author + ", Year: " + year + ", ISBN: " + isbn + ", Quantity: " + quantity;
+        return "Title: " + title + ", Author: " + author + ", Year: " + yearPublished + ", ISBN: " + isbn + ", Quantity: " + quantity;
     }
 }

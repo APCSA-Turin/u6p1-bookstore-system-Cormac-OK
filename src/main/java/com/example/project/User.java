@@ -1,15 +1,15 @@
 package com.example.project;
 
 public class User{
-    //requires 3 private attributes String name, String Id, Book[] books that is initialized to empty
+    //requires 3 private attributes String name, String id, Book[] books that is initialized to empty
     /**
      * The user's name
      */
     private String name;
     /**
-     * The user's unique ID number
+     * The user's unique id number
      */
-    private String Id;
+    private String id;
     /**
      * The books the user has
      */
@@ -31,12 +31,12 @@ public class User{
         this.name = name;
     }
 
-    public String getId() {
-        return Id;
+    public String getid() {
+        return id;
     }
 
-    public void setId(String id) {
-        Id = id;
+    public void setid(String id) {
+        id = id;
     }
 
     public Book[] getBooks() {
@@ -55,7 +55,7 @@ public class User{
         String str = "";
         for (Book book: books){
             if(book != null){
-                str += book.getTitle() + "\n";
+                str += book.bookInfo() + "\n";
             }
             else{
                 str += "empty\n";
@@ -70,7 +70,7 @@ public class User{
      * @return A string summarizing the user's name and id, and listing their books
      */
     public String userInfo(){
-        return "Name: " + name + "\nID: " + id + "\nBooks:\n" + bookListInfo();
+        return "Name: " + name + "\nId: " + id + "\nBooks: \n" + bookListInfo();
     }
        
 }
