@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.TestBookStore" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-01-16T14:22:37" hostname="codespaces-fe7886" time="0.059">
+<testsuite name="com.example.project.TestBookStore" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-01-21T17:36:04" hostname="codespaces-fe7886" time="0.026">
   <properties/>
-  <testcase name="testAddBook()" classname="com.example.project.TestBookStore" time="0.032"/>
+  <testcase name="testAddBook()" classname="com.example.project.TestBookStore" time="0.007"/>
   <testcase name="testAddUser()" classname="com.example.project.TestBookStore" time="0.003"/>
   <testcase name="testInsertBooK()" classname="com.example.project.TestBookStore" time="0.002"/>
-  <testcase name="testRemoveBook()" classname="com.example.project.TestBookStore" time="0.002"/>
-  <testcase name="testRemoveUser()" classname="com.example.project.TestBookStore" time="0.002"/>
-  <testcase name="testConsolidateUsers()" classname="com.example.project.TestBookStore" time="0.001"/>
+  <testcase name="testRemoveBook()" classname="com.example.project.TestBookStore" time="0.004"/>
+  <testcase name="testRemoveUser()" classname="com.example.project.TestBookStore" time="0.001"/>
+  <testcase name="testConsolidateUsers()" classname="com.example.project.TestBookStore" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
