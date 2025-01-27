@@ -72,5 +72,22 @@ public class User{
     public String userInfo(){
         return "Name: " + name + "\nId: " + id + "\nBooks: \n" + bookListInfo();
     }
+
+    /**
+     * Attempts to add Book book to the first empty index in books. Fails if books does not have an empty index.
+     * @param book The book to add
+     * @return Whether the book was successfully added
+     */
+    public boolean addBook(Book book){
+        boolean hasPlaced = false;
+        for(int i = 0; i < books.length; i ++){
+            if ((!hasPlaced) && books[i] == null){
+                books[i] = book;
+                hasPlaced = true;
+                return true;
+            }
+        }
+        return false;
+    }
        
 }

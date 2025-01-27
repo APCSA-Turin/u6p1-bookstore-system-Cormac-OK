@@ -188,4 +188,31 @@ public class BookStore{
         return str;
     }
 
+    /**
+     * @return A numbered list of the Books in books
+     */
+    public String bookList(){
+        String str = "";
+        for(int i = 0; i < books.length; i ++){
+            str += i + ": " + books[i].bookInfo() + "\n";
+        }
+        return str;
+    }
+
+    /**
+     * @return A numbered list of the Users in users
+     */
+    public String userList(){
+        String str = "";
+        for(int i = 0; i < users.length; i ++){
+            if(users[i] != null){
+                str += i + ": " + users[i].userInfo() + "\n";
+            }
+            else{
+                str += i + ": null\n";
+            }
+        }
+        return str;
+    }
+
 }
